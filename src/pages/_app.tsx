@@ -1,18 +1,24 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, ScaleFade } from '@chakra-ui/react'
 import type { AppProps } from 'next/app'
-import { GlobalContextProvider } from '../contexts/GlobalContext'
+import { NavBar } from '../components/NavBar'
+import { theme } from '../styles/theme'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
 
-
-  console.log(global)
   return (
-    <ChakraProvider>
-      <GlobalContextProvider >
+    <ChakraProvider theme={theme} >
+      <NavBar />
+      <ScaleFade
+        key={router.route}
+        initialScale={0.9}
+        in={true}
+      >
         <Component {...pageProps} />
-      </GlobalContextProvider>
+      </ScaleFade>
     </ChakraProvider>
   )
 }
 
 export default MyApp
+
+
