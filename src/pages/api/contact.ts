@@ -1,10 +1,11 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
-import { transporter } from '../../services/nodemailer';
+import type { NextApiRequest, NextApiResponse } from "next"
 
-const nodemailerEmailDestination: string = process.env.NODEMAILER_DESTINATION_EMAIL ?? '';
+import { transporter } from "../../services/nodemailer"
+
+const nodemailerEmailDestination: string =
+    process.env.NODEMAILER_DESTINATION_EMAIL ?? ""
 
 export default async function async(req: NextApiRequest, res: NextApiResponse) {
-
     try {
         await transporter.sendMail({
             from: req.body.data.email,
@@ -20,5 +21,4 @@ export default async function async(req: NextApiRequest, res: NextApiResponse) {
         console.log(error)
         return res.status(500).json({ error })
     }
-
 }

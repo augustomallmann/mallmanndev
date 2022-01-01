@@ -1,15 +1,12 @@
-import { NextPage } from 'next';
-import { Hero } from '../components/Hero'
+import { Hero } from "../components/Hero"
+import { NextPage } from "next"
 
 const Home: NextPage = () => {
-
-  return (
-    <>
-      <Hero />
-    </>
-  )
+    return (
+        <>
+            <Hero />
+        </>
+    )
 }
 
-
-
-export default Home;
+export default Home

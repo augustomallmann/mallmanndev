@@ -1,9 +1,9 @@
-import { extendTheme } from '@chakra-ui/react'
-import { mode } from '@chakra-ui/theme-tools'
-import { Dict } from '@chakra-ui/utils'
+import { Dict } from "@chakra-ui/utils"
+import { extendTheme } from "@chakra-ui/react"
+import { mode } from "@chakra-ui/theme-tools"
 
 export const theme = extendTheme({
-    initialColorMode: 'dark',
+    initialColorMode: "dark",
     useSystemColorMode: false,
     colors: {
         black: {
@@ -28,16 +28,15 @@ export const theme = extendTheme({
             "300": "#f5626a",
             "200": "#f6747a",
             "100": "#f7858b",
-            "50": "#f8979b"
-        }
+            "50": "#f8979b",
+        },
     },
-
 
     styles: {
         global: (props: Dict<unknown>) => ({
             body: {
-                color: mode('black.900', 'white')(props),
-                bg: mode('white', 'black.100')(props),
+                color: mode("black.900", "white")(props),
+                bg: mode("white", "black.100")(props),
             },
         }),
     },
