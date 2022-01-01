@@ -1,16 +1,15 @@
-import type { NextPage } from 'next'
-import { Seo } from '../components/Seo'
-
+import { NextPage } from 'next';
+import { Hero } from '../components/Hero'
 
 const Home: NextPage = () => {
 
-
   return (
     <>
-      <Seo title="olá mundo" description='tudo bem?' shareImage='https://www.google.com' />
-      <h1>hello world</h1>
+      <Hero />
     </>
   )
 }
 
-export default Home
+
+
+export default Home;
