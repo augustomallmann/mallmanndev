@@ -8,16 +8,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.1.1",
     "@chakra-ui/react": "^1.7.3",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
+    "@hookform/resolvers": "^2.8.5",
+    "@prismicio/client": "^6.0.0-beta.5",
+    "@prismicio/helpers": "^2.0.0-beta.8",
+    "@prismicio/react": "^2.0.2",
+    "axios": "^0.24.0",
     "framer-motion": "^5.5.5",
     "next": "12.0.7",
+    "next-seo": "^4.28.1",
+    "nodemailer": "^6.7.2",
+    "prismic-dom": "^2.2.6",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.22.5",
+    "react-icons": "^4.3.1",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/node": "17.0.5",
+    "@types/nodemailer": "^6.4.4",
+    "@types/prismic-dom": "^2.1.1",
     "@types/react": "17.0.38",
     "@typescript-eslint/eslint-plugin": "^5.8.1",
     "eslint": "8.5.0",
