@@ -1,3 +1,5 @@
+![alt text](/public/website-screenshot.png "Website Screenshot")
+
 This is a personal portfolio being developed with:
 
 -   NextJs
